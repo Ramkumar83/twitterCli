@@ -1,1 +1,21 @@
-This file was created by IntelliJ IDEA 12.0.4 for binding GitHub repository
+Pull the code from git hub
+Run mvn clean install
+Run mvn assembly:assembly
+Go to the target folder and unzip the twitterCli.zip.
+Go into the unzipped folder and run the below command
+java -jar twitterCli-1.0.jar HOST_NAME HOST_PORT FILTER  TIME_IN_SECONDS
+
+    where HOST_NAME is the host where streaming server is running
+          PORT is the one which streaming server is listening for requests
+          FILTER is the keyword you want to look for
+          TIME_IN_SECONDS is the pause between each request polling. Default value is 5 seconds.
+
+
+    FILTER is a single word and multiple keywords are not supported
+
+    Except TIME_IN_SECONDS, all arguments are mandatory.
+
+
+Streaming Server can be downloaded from
+
+    https://github.com/Ramkumar83/twitterStreamServer
