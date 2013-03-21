@@ -1,0 +1,18 @@
+<component>
+
+    <files>
+        <file>
+            <source>target/${project.name}-${version}.jar</source>
+            <outputDirectory>/</outputDirectory>
+            <filtered>false</filtered>
+        </file>
+    </files>
+
+    <fileSets>
+        <fileSet>
+            <directory>target/lib</directory>
+            <outputDirectory>lib</outputDirectory>
+            <fileMode>0755</fileMode>
+        </fileSet>
+    </fileSets>
+</component>

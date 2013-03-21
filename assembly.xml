@@ -1,0 +1,13 @@
+<assembly>
+
+    <id>${project.name}</id>
+
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <componentDescriptors>
+        <componentDescriptor>bundle-components.xml</componentDescriptor>
+    </componentDescriptors>
+
+</assembly>
